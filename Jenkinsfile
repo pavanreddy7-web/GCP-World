@@ -30,4 +30,12 @@ pipeline{
             }
         }
     }
+    post{
+        success{
+            echo "successfully fetched from GCP server"
+        }
+        failure{
+            echo "failed to getch"
+        }
+    }
 }
